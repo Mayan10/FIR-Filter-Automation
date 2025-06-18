@@ -1,0 +1,14 @@
+# Mark generated files as generated
+*.v linguist-generated=true
+final.v linguist-generated=true
+firmcshm8new_net.v linguist-generated=true
+
+# Mark Python files as the main language
+*.py linguist-language=Python
+
+# Exclude large files from language statistics
+*.net.v linguist-vendored=true
+firmcshm8new_net.v linguist-vendored=true
+
+# Mark templates as documentation
+templates/*.v linguist-documentation=true 
