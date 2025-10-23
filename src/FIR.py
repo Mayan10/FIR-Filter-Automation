@@ -42,7 +42,7 @@ def generate_fir_verilog():
         
         # Loop through the dictionary to separate unique elements and duplicates
         for element, info in element_info.items():
-            if info['count'] == 0:
+            if info['count'] == 1:
                 unique_elements.append(element)
             else:
                 duplicates_with_indices.append((element, info['indices']))
@@ -127,4 +127,5 @@ endmodule
     print("the number of coeffecients not repeated:",count_unique)
 
 if __name__ == "__main__":
+
     generate_fir_verilog()
